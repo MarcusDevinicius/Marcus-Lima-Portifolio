@@ -1,0 +1,21 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+header > button.flag.flag-pt {
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    background-image: url(/src/ART/brazil-flag.svg);
+    cursor: pointer;
+}
+
+header > button.flag.flag-en {
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    background-image: url(/src/ART/usa-flag.svg);
+    cursor: pointer;
+}

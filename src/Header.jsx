@@ -19,18 +19,26 @@ const Header = ({language, setLanguage}) => {
         }
     }
 
+    function changeLang() {
+        if(language === 'pt') {
+            setLanguage('en');
+        } else {
+            setLanguage('pt')
+        }
+    }
+
   return (
     <header>
         <nav>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#">{language === 'pt' ? texts.pt.home : texts.en.home}</a></li>
+                <li><a href="#">{language === 'pt' ? texts.pt.abtMe : texts.en.abtMe}</a></li>
+                <li><a href="#">{language === 'pt' ? texts.pt.skills : texts.en.skills}</a></li>
+                <li><a href="#">{language === 'pt' ? texts.pt.projects : texts.en.projects}</a></li>
             </ul>
         </nav>
-        <button className={`flag flag-${language}`}>
-            <div className='switch'></div>
+        <button onClick={changeLang} className={`flag flag-${language}`}>
+            <div className={`switch switch-${language}`}></div>
         </button>
     </header>
   )

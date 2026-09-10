@@ -7,7 +7,7 @@
 
 
 header {
-    background: #000122;
+    background: #00011B;
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr auto;
@@ -46,7 +46,7 @@ header > button.flag.flag-pt {
     height: 35px;
     border-radius: 20px;
     border: none;
-    background-image: url(/src/ART/brazil-flag.svg);
+    background-image: url(/src/ART/icons/brazil-flag.svg);
     background-position: center;
     cursor: pointer;
 }
@@ -56,7 +56,7 @@ header > button.flag.flag-en {
     height: 35px;
     border-radius: 20px;
     border: none;
-    background-image: url(/src/ART/usa-flag.svg);
+    background-image: url(/src/ART/icons/usa-flag.svg);
     background-position: center;
     cursor: pointer;
 }
@@ -74,4 +74,10 @@ header > button.flag > .switch {
 
 header > button.flag > .switch.switch-en {
     transform: translate3d(34px, 0, 0);
+}
+
+section.home {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }

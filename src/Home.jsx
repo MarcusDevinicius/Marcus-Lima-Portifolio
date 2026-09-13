@@ -5,12 +5,12 @@ import './CSS/main.css'
 
   const texts = {
     pt: {
-        h1: 'Criando interfaces de usuário com paixão e tecnologias modernas web',
+        h1: 'Criando interfaces de usuário com paixão e tecnologias modernas Front End',
         intro: 'Olá, me chamo Marcus Lima e bem vindo ao meu portifólio de Desenvolvedor Front End, estou empolgado para mostrar minhas habilidades e criações .',
 
     },
     en: {
-        h1: 'Creating interfaces de usuário com paixão e tecnologias modernas web.',
+        h1: 'Creating interfaces de usuário com paixão e tecnologias modernas Front End.',
         intro: 'Hello, me chamo Marcus Lima e bem vindo ao meu portifólio de Desenvolvedor Front End, estou empolgado para mostrar minhas habilidades e criações .',
 
     }

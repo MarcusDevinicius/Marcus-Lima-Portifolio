@@ -14,6 +14,11 @@ section {
     border-bottom: 1px solid #d0d1f5;
 }
 
+section > h1.title {
+    text-align: center;
+    font-size: 50px;
+}
+
 header {
     height: 80px;
     border-bottom: 1px solid #d0d1f5;
@@ -184,7 +189,8 @@ section.about {
     align-content: center;
     justify-content: center;
     gap: 20px;
-    height: 50vh;
+    height: 60vh;
+    padding-bottom: 40px;
 }
 
 section.about > h1 {
@@ -197,4 +203,84 @@ section.about > p {
     text-align: center;
     align-self: center;
     max-width: 550px;
+    
+}
+
+section.skills {
+    display: grid;
+    grid-template-rows: auto auto 100px;
+    grid-template-columns: 80px 500px auto auto 20px;
+    row-gap: 20px;
+}
+
+section.skills > .title {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    margin-top: 20px;
+}
+
+section.skills > aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 500px;
+    background: #000112;
+    border-radius: 20px;
+    border: 1px solid #9395c1;
+    padding: 17px 12px 17px 8px;
+}
+
+section.skills > aside > h2 {
+    font-size: 30px;
+}
+
+section.skills > aside > p {
+    font-size: 28px;
+}
+
+section.skills > nav {
+    grid-column: 4;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+section.skills > nav > ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 25px;
+    row-gap: 15px;
+    list-style: none;
+}
+
+section.skills button {
+    position: relative;
+    background: #000112;
+    border: none;
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+section.skills button:hover::after {
+    width: 80px;
+    height: 2px;
+}
+
+section.skills button::after {
+    position: absolute;
+    top: 100px;
+    left: 12px;
+    display: inline-block;
+    content: ' ';
+    width: 0;
+    height: 10px;
+    background: #9395c1;
+    transition: all .7s ease-in-out;
+}
+
+section.skills img {
+    width: 80px;
 }

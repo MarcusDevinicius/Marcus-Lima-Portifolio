@@ -1,5 +1,5 @@
 import React from 'react'
-import './CSS/main.css'
+import '../CSS/main.css'
 
 const About = ({language}) => {
 
@@ -17,7 +17,7 @@ const About = ({language}) => {
 
   return (
     <section className='about'>
-        <h1>{language === 'pt' ? texts.pt.title : texts.en.title}</h1>
+        <h2>{language === 'pt' ? texts.pt.title : texts.en.title}</h2>
         <p>{language === 'pt' ? texts.pt.paragraph : texts.en.paragraph}</p>
     </section>
   )

@@ -1,8 +1,9 @@
 import React from 'react'
 import Header from './Header';
-import Home from './Home';
 import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
+import Home from './Home';
 
 function App() {
   const [language, setLanguage] = React.useState('pt');
@@ -12,6 +13,7 @@ function App() {
       <Home language={language}/>
       <About language={language}/>
       <Skills language={language}/>
+      <Projects language={language}/>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../CSS/main.css'
 const Skills = ({language}) => {
   return (
     <section className='skills'>

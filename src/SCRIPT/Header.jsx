@@ -1,5 +1,5 @@
 import React from 'react'
-import './CSS/main.css'
+import '../CSS/main.css'
 
 const Header = ({language, setLanguage}) => {
 

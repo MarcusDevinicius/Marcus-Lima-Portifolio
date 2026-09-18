@@ -193,7 +193,7 @@ section.about {
     padding-bottom: 40px;
 }
 
-section.about > h1 {
+section.about > h2 {
     text-align: center;
     font-size: 50px;
 }
@@ -208,7 +208,7 @@ section.about > p {
 
 section.skills {
     display: grid;
-    grid-template-rows: auto auto 100px;
+    grid-template-rows: max-content 400px 200px;
     grid-template-columns: 80px 500px auto auto 20px;
     row-gap: 20px;
 }
@@ -217,6 +217,7 @@ section.skills > .title {
     grid-column: 3 / 4;
     grid-row: 1;
     margin-top: 20px;
+    align-self: center;
 }
 
 section.skills > aside {
@@ -225,7 +226,9 @@ section.skills > aside {
     gap: 10px;
     grid-column: 2;
     grid-row: 2;
+    align-self: center;
     max-width: 500px;
+    height: 300px;
     background: #000112;
     border-radius: 20px;
     border: 1px solid #9395c1;
@@ -262,17 +265,23 @@ section.skills button {
     border: none;
     padding: 12px 12px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+section.skills button:hover {
+    background: #4448a11d;
+
 }
 
 section.skills button:hover::after {
-    width: 80px;
+    width: 104px;
     height: 2px;
 }
 
 section.skills button::after {
     position: absolute;
-    top: 100px;
-    left: 12px;
+    top: 105px;
+    left: 0px;
     display: inline-block;
     content: ' ';
     width: 0;

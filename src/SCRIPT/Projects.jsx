@@ -6,7 +6,7 @@ const Projects = ({language}) => {
   return (
     <section className='projects'>
         <h2>Projetos</h2>
-        <article>
+        <article className='projects-container'>
             <ul>
                 <li>
                   <a href="">

@@ -10,8 +10,8 @@ import '../CSS/main.css'
 
     },
     en: {
-        h1: 'Creating interfaces de usuário com paixão e tecnologias modernas Front End.',
-        intro: 'Hello, me chamo Marcus Lima e bem vindo ao meu portifólio de Desenvolvedor Front End, estou empolgado para mostrar minhas habilidades e criações .',
+        h1: 'Creating user interfaces with passion and modern Front-End technologies.',
+        intro: 'Hello, my name is Marcus Lima, and welcome to my Front-End Developer portfolio. I’m excited to showcase my skills and projects.',
 
     }
   }
@@ -22,9 +22,9 @@ import '../CSS/main.css'
         <p>{language === 'pt' ? texts.pt.intro : texts.en.intro}</p>
         <img src="src/ART/img/my-img.png" alt="An image of Marcus." />
         <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">LinkedIn <img className='arrow-icon' src="src/ART/icons/arrow.svg" alt="" /></a></li>
+            <li><a href="#">GitHub <img className='arrow-icon' src="src/ART/icons/arrow.svg" alt="" /></a></li>
+            <li><a href="#">Whatsapp <img className='arrow-icon' src="src/ART/icons/arrow.svg" alt="" /></a></li>
             <li><a href="#">Download CV</a></li>
         </ul>
     </section>

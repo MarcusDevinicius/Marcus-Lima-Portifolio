@@ -87,32 +87,11 @@ const Skills = ({language}) => {
           )}
 
           {language === 'en' && (
-          <aside>
-            <h2>{states.en[skill].title}</h2>
-            <p>{states.en[skill].text}</p>
-          </aside>
+            <aside>
+              <h2>{states.en[skill].title}</h2>
+              <p>{states.en[skill].text}</p>
+            </aside>
           )}
-        
-          
-          {/* <h2>{states[skill].title}</h2> */}
-          {/* <p>{states[skill].text}</p> */}
-            {/* <h2>{skill === 'html' ? 'HTML' : ''}</h2>
-            <p>{skill === 'html' ? 'Possuo cerca de 2 anos de experiência com HTML5, utilizando tags semânticas e boas práticas para estruturar páginas de forma organizada e acessível.' : ''} </p>
-
-            <h2>{skill === 'css' ? 'CSS' : ''}</h2>
-            <p>{skill === 'css' ? 'Iniciei os estudos em CSS3 juntamente com HTML e, ao longo da prática, desenvolvi interfaces responsivas, animações e landing pages modernas..' : ''} </p>
-
-            <h2>{skill === 'js' ? 'JavaScript' : ''}</h2>
-            <p>{skill === 'js' ? 'Com JavaScript ES6, desenvolvi lógica de programação, manipulação do DOM e funcionalidades interativas voltadas para uma melhor experiência do usuário.' : ''} </p>
-
-            <h2>{skill === 'figma' ? 'Figma' : ''}</h2>
-            <p>{skill === 'figma' ? 'Utilizo o Figma para planejar interfaces e protótipos antes do desenvolvimento, tornando a implementação mais organizada e consistente.' : ''} </p>
-
-            <h2>{skill === 'react' ? 'React' : ''}</h2>
-            <p>{skill === 'react' ? 'Atualmente utilizo React para desenvolver interfaces reutilizáveis e dinâmicas, aplicando componentes, estados e boas práticas do ecossistema.' : ''} </p>
-
-            <h2>{skill === 'github' ? 'GitHub' : ''}</h2>
-            <p>{skill === 'github' ? 'Utilizo Git e GitHub para versionamento de código, gerenciamento de projetos e colaboração, mantendo um histórico organizado das aplicações.' : ''} </p> */}
         
         <nav className='skills-icon'>
           <ul>

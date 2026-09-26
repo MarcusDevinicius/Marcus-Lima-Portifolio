@@ -4,6 +4,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Home from './Home';
+import Footer from './Footer';
 
 function App() {
   const [language, setLanguage] = React.useState('pt');
@@ -14,6 +15,7 @@ function App() {
       <About language={language}/>
       <Skills language={language}/>
       <Projects language={language}/>
+      <Footer />
     </>
   )
 }

@@ -3,9 +3,22 @@ import '../CSS/main.css'
 
 
 const Projects = ({language}) => {
+
+  const texts = {
+    pt: {
+      title:  'Projetos'
+    },
+    en: {
+      title: 'Projects'
+    }
+  }
+
+  const [cover, setCover] = React.useState(false);
+
+
   return (
     <section className='projects'>
-        <h2>Projetos</h2>
+        <h2>{language === 'pt' ? texts.pt.title : texts.en.title}</h2>
         <article className='projects-container'>
             <ul>
                 <li>

@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    border-bottom: 1px solid #4f4f58;
+    border-bottom: 1px solid #29292b;
 }
 
 section > h1.title {
@@ -358,6 +358,28 @@ section.projects > article > ul::-webkit-scrollbar-track {
 section.projects > article > ul > li {
     position: relative;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+
+}
+
+section.projects > article > ul > li:nth-child(3),
+section.projects > article > ul > li:nth-child(4),
+section.projects > article > ul > li:nth-child(5) {
+    width: 375px;
+    height: 225px;
+    background: #22288c;
+}
+/* aqui estou tirando o background dos titulos nos banner de em breve */
+
+section.projects > article > ul > li:nth-child(3)::after,
+section.projects > article > ul > li:nth-child(4)::after,
+section.projects > article > ul > li:nth-child(5)::after {
+    background: none;
+}
+
+
+section.projects > article > ul > li:hover {
+    transform: scale(1.07);
 }
 
 section.projects > article > ul > li::before {
@@ -369,8 +391,42 @@ section.projects > article > ul > li::before {
     width: 375px;
     height: 225px;
     background: #00011291;
-    z-index: 1000;
+    z-index: 1000;    
 }
+
+section.projects > article > ul > li::after {
+    display: inline-block;
+    content: attr(data-title);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 27px;
+    letter-spacing: 1;
+    max-width: 300px;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    background: #00011220;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+section.projects > article > ul > li:hover::before {
+    background: none;
+}
+
+section.projects > article > ul > li:hover::after {
+    content: ' ';
+    padding: 0;
+
+}
+
+section.projects > article > ul > li:nth-child(3):hover::after,
+section.projects > article > ul > li:nth-child(4):hover::after,
+section.projects > article > ul > li:nth-child(5):hover::after {
+    content: attr(data-title);
+}
+
 
 footer {
     width: 100%;

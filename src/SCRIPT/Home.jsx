@@ -17,7 +17,7 @@ import '../CSS/main.css'
   }
 
   return (
-    <section className='home'>
+    <section className='home' id='home'>
         <h1>{language === 'pt' ? texts.pt.h1 : texts.en.h1}</h1>
         <p>{language === 'pt' ? texts.pt.intro : texts.en.intro}</p>
         <img src="src/ART/img/my-img.png" alt="An image of Marcus." />

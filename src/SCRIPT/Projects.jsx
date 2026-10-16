@@ -17,33 +17,33 @@ const Projects = ({language}) => {
 
 
   return (
-    <section className='projects'>
+    <section className='projects' id='projects'>
         <h2>{language === 'pt' ? texts.pt.title : texts.en.title}</h2>
         <article className='projects-container'>
             <ul>
-                <li>
+                <li data-title="Longevidade de Pets">
                   <a href="">
                     <img src="./src/ART/img/longevidade-de-pets.jpg" alt="" />
                     </a>
                 </li>
-                <li>
+                <li data-title="Site Avanti">
                   <a href="">
                     <img src="./src/ART/img/site-avanti-banner.jpg" alt="" />
                   </a>
                 </li>
-                <li>
+                <li data-title="Em Breve">
                   <a href="">
-                    <img src="./src/ART/img/site-avanti-banner.jpg" alt="" />
+                    <img src="" alt="" />
                   </a>
                 </li>
-                <li>
+                <li data-title="Em Breve">
                   <a href="">
-                    <img src="./src/ART/img/site-avanti-banner.jpg" alt="" />
+                    <img src="" alt="" />
                   </a>
                 </li>
-                <li>
+                <li data-title="Em Breve">
                   <a href="">
-                    <img src="./src/ART/img/site-avanti-banner.jpg" alt="" />
+                    <img src="" alt="" />
                   </a>
                 </li>
             </ul>

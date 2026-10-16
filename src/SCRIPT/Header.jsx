@@ -31,10 +31,10 @@ const Header = ({language, setLanguage}) => {
     <header>
         <nav>
             <ul>
-                <li><a href="#">{language === 'pt' ? texts.pt.home : texts.en.home}</a></li>
-                <li><a href="#">{language === 'pt' ? texts.pt.abtMe : texts.en.abtMe}</a></li>
-                <li><a href="#">{language === 'pt' ? texts.pt.skills : texts.en.skills}</a></li>
-                <li><a href="#">{language === 'pt' ? texts.pt.projects : texts.en.projects}</a></li>
+                <li><a href="#home">{language === 'pt' ? texts.pt.home : texts.en.home}</a></li>
+                <li><a href="#about">{language === 'pt' ? texts.pt.abtMe : texts.en.abtMe}</a></li>
+                <li><a href="#skills">{language === 'pt' ? texts.pt.skills : texts.en.skills}</a></li>
+                <li><a href="#projects">{language === 'pt' ? texts.pt.projects : texts.en.projects}</a></li>
             </ul>
         </nav>
         <button onClick={changeLang} className={`flag flag-${language}`}>
